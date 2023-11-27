@@ -1,38 +1,74 @@
-.App {
+/* LandingPage.css */
+
+.landing-page-container {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-border {
+  border: 2px solid #333; /* Border style */
+  padding: 10px; /* Padding to provide space around the heading */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-button {
+  background-color: blue; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Padding for the button */
+  text-decoration: none; /* Remove default button text underline */
+  border: none; /* Remove button border */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  margin-top: 10px; /* Add some space between heading and button */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #01080e;
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-item {
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
+/* Button styling */
+.button.is-primary {
+
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: auto;
+  border: 1px solid  ;
+  border-radius: 5px;
+  padding: 7px 20px; /* Adjust padding as needed */
+}
+
+/* App.css */
+
+/* Marquee-like animation for the entire statement */
+@keyframes moveLeft {
   from {
-    transform: rotate(0deg);
+    transform: translateX(100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(-100%);
   }
+}
+
+.marquee-text {
+  font-size: 20pt;
+  white-space: normal; /* Allow text to wrap */
+  overflow: hidden;
+  word-wrap: break-word; /* Break words if they exceed the container width */
+  animation: moveLeft 10s linear infinite; /* Adjust animation duration as needed */
+}
+
+/* Heading list styling */
+.heading_list {
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 40px;
+  color: maroon;
+  width: 100%; /* Adjust the width as needed */
+  margin: auto; /* Center the container */
 }

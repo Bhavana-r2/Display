@@ -1,0 +1,136 @@
+/* Add these styles to your existing CSS file or create a new one */
+
+/* UserList.css */
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+.new-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.new-heading-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.new-heading-form textarea,
+.new-input input {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    resize: vertical;
+    background: #eaeaea;
+    border-radius: 6px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+
+
+.new-heading-form button,
+.new-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: whitesmoke;
+    background: #3c009d;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.new-heading-form button:hover,
+.new-submit:hover {
+    background: #2a0073; /* Adjust the hover background color as needed */
+}
+
+.logout-button {
+    margin-top: 20px;
+}
+
+.delete-button {
+    background-color: #ff3860;
+    color: white;
+}
+
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.logout-button-header {
+    margin-left: 10px;
+    background-color: #09060c; /* Standardized color */
+    color: whitesmoke;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 30px;
+  }
+
+  .logout-button-header:hover {
+    background-color: #2a0073; /* Adjust the hover background color as needed */
+  }
+  
+
+.column.is-half {
+    margin: 0 auto;
+  }
+  
+.table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto; /* Center the table */
+  }
+  
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #130a1f; /* Standardized color */
+    color: whitesmoke;
+  }
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Adjustments for the delete button */
+.delete-button {
+    background-color: #ff3860;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #cc2f4c;
+}
+
